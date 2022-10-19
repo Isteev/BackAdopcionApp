@@ -41,7 +41,7 @@ app.use("/pets", pets);
 app.use("/pet-types", petTypes);
 app.use("/users", users);
 
-const PORT = 2000;
+const PORT = 3000;
 const runServer = async () => {
   try {
     await sequelize.sync({ force: false });
