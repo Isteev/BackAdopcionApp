@@ -18,6 +18,7 @@ import oauth from "./src/modules/oauth/routes.js";
 import pets from "./src/modules/pets/routes.js";
 import petTypes from "./src/modules/petTypes/routes.js";
 import users from "./src/modules/users/routes.js";
+import likes from "./src/modules/likes/routes.js";
 
 const app = express();
 app.use(cors());
@@ -40,6 +41,7 @@ app.use("/oauth", oauth);
 app.use("/pets", pets);
 app.use("/pet-types", petTypes);
 app.use("/users", users);
+app.use("/likes", likes);
 
 const PORT = 3000;
 const runServer = async () => {
